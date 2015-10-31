@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Fitness</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!--Почему у reset css не твкой же результат, как у *{margin: 0;} ????
+  <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/jquery.fancybox.js"></script>
@@ -15,14 +17,14 @@
 </head>
 <body>
   <div class="wrapper">
+
     <div class="header">
       <h1>
         <a href="a">
           <img src="img/logo.jpg" alt="logo">
         </a>
       </h1>
-
-      <ul class="menu">
+      <ul class="menu clearfix">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Товары</a></li>
         <li><a href="#">О нас</a></li>
@@ -30,7 +32,7 @@
       </ul>
     </div>
 
-    <div class="content">
+    <div class="content clearfix">
       <div class="sidebar">
         <ul class="sidebar-menu">
           <li><a href="#">Ноутбуки</a></li>
@@ -54,16 +56,17 @@
       </div>
     </div>
 
-     <div class="footer">
+     <div class="footer clearfix">
       <ul class="footer-menu">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Товары</a></li>
         <li><a href="#">О нас</a></li>
         <li><a href="#">Контакты</a></li>
-        <li class="copyright">2014 © All rights reserved</li>
       </ul>
-    </div>
+      <div class="copyright">2014 &copy All rights reserved
+      </div>
 
+    </div>
   </div>
 </body>
 </html>

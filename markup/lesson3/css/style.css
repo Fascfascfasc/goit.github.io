@@ -74,7 +74,7 @@ body {
   font-size: 14px;
   line-height: 37px;
   text-decoration: none;
-  transition: 0.3s;
+  transition:  0.2s linear;
 }
 .sidebar-menu a:hover{
   padding-left: 35px;

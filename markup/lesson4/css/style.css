@@ -1,24 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: #f9f9f9;
-  font-size: 14px;
-  font-family: sans-serif;
-}
-.clearfix{
-	clear: both;
-}
+/*
 .wrapper {
   width: 968px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 46px 0 40px;
-  background: #fff;
-  box-shadow: 0px 0px 4px 0px rgba(85,85,85,1);
 }
 
-/*header*/
 .header {
   padding-top: 50px;
   margin-bottom: 40px;
@@ -47,10 +34,9 @@ body {
   border-left: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
   background: linear-gradient(to bottom, #4a4a4a 0%,#2e2e2e 100%);
-}
+}*/
 
-/*content*/
-.sidebar{
+/*.sidebar{
   float: left;
   width: 240px;
 }
@@ -69,6 +55,7 @@ body {
   display: block;
   padding-left: 23px;
   color: #656363;
+  font-size: 14px;
   line-height: 37px;
   text-decoration: none;
   transition:  0.2s linear;
@@ -91,29 +78,76 @@ body {
 .product-description {
   padding: 30px 22px 0 22px;
   line-height: 21px;
+  font-size: 14px;
   color: #2c2c2c;
-}
+}*/
 
-/*footer*/
-.footer{
-  margin-top: 50px;
-  background: #e1e1e1;
-  line-height: 40px;
+
+* {
+  margin: 0;
+  padding: 0;
 }
-.footer-menu li{
+body {
+
+  background: linear-gradient(to bottom, #3283A6, #205F8F);
+  font-family: sans-serif;
+  background-image: url(../img/bg.jpg);
+  background-repeat: repeat-x;
+  background-position: 0 -38px;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.wrapper {
+  width: 968px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(85,85,85,1);*/
+}
+.header {
+  height: 175px;
+  background-color: red;
+}
+.logo {
+  color: #128aa7;
+}
+.contacts {
+  float: right;
+  width: 200px;
+}
+.countres {
+  float: right;
+}
+.image {
+  background-color: black;
+  height: 235px;
+}
+.menu {
+  height: 28px;
+  background-color: yellow;
+}
+.content {
+  height: 545px;
+  background-color: cyan;
+}
+.block {
+  float:left;
+  min-height: 100%;
+  width: 208px;
+  margin-right: 20px;
+  background: green;
+}
+.info {
   float: left;
-  padding: 0 50px;
-  list-style: none;
 }
-.footer-menu a{
-  display: block;
-  color: #2c2c2c;
-  text-decoration: none;
+.news {
+  float: right;
+  margin-right:0;
 }
-.footer-menu a:hover{
-  text-decoration: underline;
-}
-.copyright{
-	float: right;
-	margin-right: 25px;
+.footer {
+  height: 31px;
+  background-color: blue;
+  color: white;
 }

@@ -1,42 +1,5 @@
 /*
-.wrapper {
-  width: 968px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 46px 0 40px;
-}
-
-.header {
-  padding-top: 50px;
-  margin-bottom: 40px;
-}
-.menu {
-  overflow: hidden;
-  margin-top: 30px;
-	background: linear-gradient(to bottom, #5e5e5e 0%,#444343 100%);
-}
-.menu li {
-  float: left;
-  margin: 0 1px;
-  list-style: none;
-}
-.menu a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 100;
-  padding: 0 40px;
-  line-height: 40px;
-}
-.menu li:hover {
-  margin: 0;
-  border-left: 1px solid #dbdbdb;
-  border-right: 1px solid #dbdbdb;
-  background: linear-gradient(to bottom, #4a4a4a 0%,#2e2e2e 100%);
-}*/
-
-/*.sidebar{
+.sidebar{
   float: left;
   width: 240px;
 }
@@ -82,72 +45,151 @@
   color: #2c2c2c;
 }*/
 
-
 * {
   margin: 0;
   padding: 0;
 }
 body {
-
   background: linear-gradient(to bottom, #3283A6, #205F8F);
-  font-family: sans-serif;
   background-image: url(../img/bg.jpg);
   background-repeat: repeat-x;
   background-position: 0 -38px;
+  font-family: Tahoma, sans-serif;
 }
-.clearfix:after{
-	content: '';
+.clearfix {
 	clear: both;
-	display: block;
 }
 .wrapper {
-  width: 968px;
+  width: 1000px;
+  overflow: hidden; /* Выталкивает всё, что не входит в wrapper */
   margin: 0 auto;
-  background: #fff;
-  box-shadow: 0px 0px 7px 0px rgba(85,85,85,1);*/
+  box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+  border-bottom: 3px solid #000;
 }
+
 .header {
   height: 175px;
-  background-color: red;
+  background-color: #fff;
+  color: #128aa7;
+}
+.header a {
+  color: #128aa7;
 }
 .logo {
-  color: #128aa7;
+	float: left;
+	margin-top: 11px;
+	margin-left: 28px;
+	line-height: 0;
+}
+.header-right-side {
+  float: right;
 }
 .contacts {
   float: right;
-  width: 200px;
+  padding: 8px 34px 0 0;
+  font-size: 12px;
 }
+.contacts li {
+  list-style: none;
+}
+.contacts li:first-child {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.contacts li {
+  line-height: 17px;
+}
+.contacts a {
+  text-decoration: none;
+}
+
 .countres {
   float: right;
+  padding: 30px 28px 9px 0;
+  list-style: none;
+  font-size: 10px;
 }
+.countres li {
+  display: block;
+  width: 56px;
+  float: left;
+  text-align: center;
+}
+.countres a:hover {
+  text-decoration: none;
+}
+
 .image {
-  background-color: black;
-  height: 235px;
+  height: 237px; /*смущает вот этот момент – пришлось подгонять размер картинки, чтобы стал виден нижний boreder */
+  border-top: 1px solid #128aa7;
+  border-bottom: 1px solid #128aa7;
 }
 .menu {
+  overflow: hidden;
   height: 28px;
   background-color: yellow;
+	background: linear-gradient(to bottom, #373737 0%, #303030 100%);
+  border-top: 1px solid #cacbcb;
+  border-bottom: 1px solid #000;
+  /* Как отобразить тень поверх блоков ниже? */
+  box-shadow: 0 40px 40px;
 }
+.menu li {
+  float: left;
+  margin: 0 1px;
+  list-style: none;
+  /* Как растянуть пунты по ширине? */
+}
+.menu a {
+  display: block;
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+}
+/*
+.menu li:hover {
+  margin: 0;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  background: linear-gradient(to bottom, #4a4a4a 0%,#2e2e2e 100%);*/
+
 .content {
   height: 545px;
-  background-color: cyan;
+  background-color: #fff;
 }
 .block {
   float:left;
   min-height: 100%;
-  width: 208px;
-  margin-right: 20px;
-  background: green;
+  width: 170px;
+  padding: 9px 24px 0 15px;
+  font-size: 14px;
+  background: #edeef0;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+}
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 3px;
 }
 .info {
   float: left;
+  line-height: 24px;
 }
 .news {
   float: right;
-  margin-right:0;
+  margin-right: 0;
+  line-height: 24px;
 }
 .footer {
   height: 31px;
-  background-color: blue;
-  color: white;
+  font-size: 12px;
+  color: #fff;
+  line-height: 31px;
+  text-align: center;
 }

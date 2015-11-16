@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Пит Мондриан "Композиция с красным, синим и желтым"</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      margin: 30px auto;
+      background: black;
+      font: 14px serif;
+    }
+    td {
+      padding: 10px 3px;
+      border: 1px solid black;
+      background: white;
+      color: white;
+    }
+
+    .y {
+      background-color: yellow;
+      color: yellow;
+    }
+    .r {
+      background-color: tomato;
+      color: tomato;
+    }
+    .g {
+      background-color: dimgray;
+      color: dimgray;
+    }
+    .g {
+      background-color: #330;
+      color: #330;
+    }
+    .b {
+      background-color: navy;
+      color: navy;
+      }
+  </style>
+
+</head>
+<body>
+  <table>
+        <!-- Раз -->
+    <tr>
+      <td colspan="2">Lorem</td>
+      <td colspan="3">Lorem</td>
+      <td colspan="2" class="y">Lorem</td>
+    </tr>
+    <!-- Два -->
+    <tr>
+      <td rowspan="2">Lorem</td>
+      <td colspan="4" rowspan="4" class="r">Lorem</td>
+      <td colspan="2" rowspan="2" class="y">Lorem<br>ipsum</td>
+    </tr>
+    <!-- Три -->
+    <tr>
+    </tr>
+    <!-- Четыре -->
+    <tr>
+      <td rowspan="3">Lorem</td>
+      <td rowspan="2">Lorem<br>ipsum</td>
+      <td rowspan="2">Lorem<br>ipsum</td>
+    </tr>
+    <!-- Пять -->
+    <tr>
+    </tr>
+    <!-- Шесть -->
+    <tr>
+      <td class="g">Lorem</td>
+      <td class="g">Lorem</td>
+      <td colspan="2">Lorem</td>
+      <td colspan="2">Lorem</td>
+    </tr>
+    <!-- Семь -->
+    <tr>
+      <td rowspan="3" class="y">Lorem</td>
+      <td class="g">Lorem</td>
+      <td class="g">Lorem</td>
+      <td colspan="2">Lorem</td>
+      <td colspan="2" rowspan="2" class="b">Lorem</td>
+    </tr>
+    <!-- Восемь -->
+    <tr>
+      <td colspan="2" rowspan="2">Lorem</td>
+      <td colspan="2" class="g">Lorem ipsum</td>
+    </tr>
+    <!-- Девять -->
+    <tr>
+      <td colspan="2">Lorem</td>
+      <td colspan="4">Lorem</td>
+    </tr>
+  </table>
+</body>
+</html>

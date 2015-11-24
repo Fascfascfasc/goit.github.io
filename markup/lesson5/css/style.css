@@ -11,7 +11,7 @@
 }
 body{
   background: url(../img/bg.jpg) no-repeat top center #6d806a;
-  font: 14px 'HelveticaNeue', Tahoma, Helvetica, Arial, sans-serif;
+  font: 14px 'HelveticaNeue', Helvetica, Tahoma, Arial, sans-serif;
 }
 .wrapper {
   min-height: 100%;
@@ -30,17 +30,19 @@ body{
   width: 190px;
   text-align: center;
   color: #ffffff;
-  background: linear-gradient(to bottom, #51b0dc 0%, #2e79c4 100%);
+  cursor: pointer;
 }
 .button.ola:hover {
-  background: linear-gradient(to top, #51b0dc 0%, #2e79c4 100%);
+  background: linear-gradient(to bottom, #51b0dc 0%, #2e79c4 100%);
+}
+.button.ola:hover span {
   text-decoration: underline;
-  cursor: pointer;
 }
 .button.flag {
   float: right;
   border-left: 1px solid #56a2dc;
   /*Не нашел решения как сделать у рамки отступ сверху снизу на 2px*/
+  cursor: pointer;  сгкыщкЖ зщштеукж
 }
 .button.flag img {
   vertical-align: middle;
@@ -50,8 +52,7 @@ body{
 }
 .button.flag:hover {
   text-decoration: underline;
-  background-color: #4eabda;
-  cursor: pointer;
+  background: linear-gradient(to bottom, #51b0dc 0%, #2e79c4 100%);
 }
 ul {
   float: right;
@@ -76,9 +77,13 @@ li:hover {
 
 /*Форма*/
 .forma {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -280px;
   width: 560px;
   height: 500px;
-  margin: 213px auto;
 }
 h3 {
   color: #ffffff;
@@ -94,11 +99,14 @@ form {
   background: rgba(0, 0, 0, 0.6);;
   padding-top: 36px;
   color: #ffffff;
+  outline: none;
 }
+
 /*Кнопка FB*/
 .fb-submit {
   display: block;
-  margin: 36px auto 0 auto;
+  margin: 0 auto;
+  position: relative;
   width: 276px;
   height: 34px;
   color: #ffffff;
@@ -107,56 +115,35 @@ form {
   background: linear-gradient(to bottom, #3d5696 0%, #314172 100%);
   border: none;
   border-radius: 3px;
+  box-shadow: inset 0px 1px #7789b7;
   cursor: pointer;
-  /*margin-bottom: 20px;*/
-  /*text-align: center;*/
-  /*vertical-align: middle;*/
 }
-/*.fb-submit span + */
 .fb-text {
-  display: inline;
-  font-weight: bold;
-  border: none;
-}
-/*.fb-submit::before {
   display: inline-block;
-  content: '';
-  width: 2px;
-  height: 100%;
-  vertical-align: middle;
-  background: linear-gradient(to left, rgba(31,61,115,1) 0%,rgba(31,61,115,1) 50%,rgba(76,104,169,1) 51%,rgba(76,104,169,1) 100%);
-}*/
+  font-weight: bold;
+}
 .fb-submit::before {
   display: inline-block;
   content: '';
-  width: auto;
-  padding-right: 25px;
-  margin-left: 10px;
-  /*line-height: 33px;*/
-  /*height: 30px;*/
-  height: 100%;
-  vertical-align: middle;
-  background: url("../img/fb-btn.png") 0 5px no-repeat;
-  border-right: 1px solid rgba(76,102,163,0.5);
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  left: 0;
+  background: url("../img/fb-btn.png") 0 0 no-repeat;
+  box-shadow: inset -1px 0px #1f3c76;
+  border-right: 1px solid #7789b7;
 }
-/*.fb-submit img {
-  position: relative;
-  padding-left: 5px;
-  padding-right: 25px;
-  vertical-align: middle;
-  top: -1px;
-}*/
-/*Другой вариант стрелки после текста*/
 .fb-submit::after {
   display: inline-block;
   content: '';
+  position: absolute;
   margin-left: 23px;
-  line-height: 34px;
+  top: 11px;
   width: 7px;
   height: 11px;
-  vertical-align: middle;
-  background: url("../img/l-arrow.png") 0 -2px no-repeat;
+  background: url("../img/l-arrow.png") 0 0 no-repeat;
 }
+
 /*Разделитель*/
 .line {
   display: block;
@@ -182,6 +169,7 @@ form {
   margin-right: 0px;
   margin-left: 5px;
 }
+
 /*Инпуты*/
 input {
   display: block;
@@ -189,41 +177,52 @@ input {
   padding: 0 20px;
   width: 236px;
   line-height: 36px;
-  font: 14px;
-  color: #fffbfb;
-  color: red;
+  font-size: 14px;
+  color: #cccccc;
   background: #000000;
   border: none;
   border-bottom: 1px solid gray;
 }
-input {
-  color: red;
+input:focus {
+  color: #ffffff;
+  background: #1b5288;
 }
 input[submit] {
   width: 150px;
   background: linear-gradient(to bottom, #50aedb 0%, #2e7ac4 100%);
 }
-.btn-create {
 
-}
 /*Чекбокс*/
+.checkbox {
+  display: inline-block;
+  margin: 0 5px 6px 142px;
+  width: 15px;
+  height: 15px;
+}
+ .send-text {
+  color: #cccccc;
+}
+
 /*Кнопка создать аккаунт*/
 .btn-create {
   width: 151px;
+  padding: 0;
   color: #ffffff;
-  font-weight: bold;
+  outline: none;
   border-top: 1px solid #67c6e6;
   border-bottom: none;
   border-radius: 3px;
+  cursor: pointer;
   background: linear-gradient(to bottom, #50aedb 0%, #2e7ac4 100%);
 }
 .btn-create:focus {
   background: linear-gradient(to top, #50aedb 0%, #2e7ac4 100%);
 }
+
 /*Соглашение*/
 .policy {
   display: block;
-  margin: 20px auto 22px auto;
+  margin: 20px auto 17px auto;
   text-align: center;
   color: #cccccc;
   font-size: 11px;

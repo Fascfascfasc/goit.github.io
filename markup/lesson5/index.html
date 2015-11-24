@@ -1,10 +1,3 @@
-<!-- TODO:
-1 подключить шрифт
-2 разобраться в картинкой в кнопке FB – Сделать ссылкой плюс картинка
-3 выровнять форму по центру высоты
-4 сделать подсветку полей
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +12,7 @@
       <div class="menu">
 <!-- Кнопка -->
         <div class="button ola">
-          <a href="#">Ola! Entrar ou Cadastre-se</a>
+          <a href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a>
         </div>
 <!-- Кнопка с флагом -->
         <div class="button flag">
@@ -46,7 +39,7 @@
 <!-- Кнопка FB -->
         <button type="submit" class="fb-submit" value="Log in with FB"/>
           <!-- <img src="./img/fb-btn.png" alt="Facebook logo"> -->
-          <span class="fb-text">Log</span> In with <span class="fb-text">Facebook</span>
+          <span class="fb-text">Log In</span> with <span class="fb-text">Facebook</span>
           <!-- <img src="./img/l-arrow.png" alt="arrow"> -->
         </button>
 <!-- Разделитель -->
@@ -58,14 +51,15 @@
 
         <input type="email" placeholder="Email Address" required id="email" name="email"/>
 
-        <input type="password" placeholder="Password Confirm" required id="password" name="password"/>
+        <input type="password" placeholder="Choose Password" required id="password" name="password"/>
 
         <input type="password" placeholder="Password Confirm" required id="confirm-password" name="confirm-password"/>
 
         <label>
-          <input type="checkbox" id="checkbox"/>
-          <span>Send me Youbike updates and tips</span>
+          <input type="checkbox" id="checkbox" class="checkbox"/>
+          <span class="send-text">Send me Youbike updates and tips</span>
         </label>
+
 
         <input type="submit" class="btn-create" value="Create my Account"/>
 

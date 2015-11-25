@@ -7,67 +7,71 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="header clrfx">
+    <div class="header">
 <!-- Меню -->
-      <div class="menu">
+      <div class="menu-container">
+        <div class="menu">
 <!-- Кнопка -->
-        <div class="button ola">
-          <a href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a>
-        </div>
+          <div class="btn ola">
+            <span>Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></span>
+          </div>
 <!-- Кнопка с флагом -->
-        <div class="button flag">
-          <a href="#"><img src="../lesson5/img/flag.png" alt="Minhas Ofertas";>Minhas Ofertas</a>
-        </div>
+          <div class="btn flag">Minhas Ofertas</div>
 <!-- Пункты меню -->
-        <ul>
-          <li><a href="#">Meu YouBike</a></li>
-          <li><a href="#">Vender</a></li>
-          <li><a href="#">Forum</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Ajuda</a></li>
-        </ul>
+          <ul>
+            <li><a href="#">Meu YouBike</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-<!-- Форма -->
-    <div class="forma">
-<!-- Заголовок -->
+<!-- Контейнер формы -->
+    <div class="form-container">
+<!-- Заголовок формы-->
       <h3>
         Cadastre-se
       </h3>
-<!-- Сама форма -->
-      <form class="login clrfx" method="post" action="#">
+<!-- Область формы -->
+      <div class="forma clrfx">
 <!-- Кнопка FB -->
         <button type="submit" class="fb-submit" value="Log in with FB"/>
-          <!-- <img src="./img/fb-btn.png" alt="Facebook logo"> -->
           <span class="fb-text">Log In</span> with <span class="fb-text">Facebook</span>
-          <!-- <img src="./img/l-arrow.png" alt="arrow"> -->
         </button>
 <!-- Разделитель -->
-        <span class="line clrfx">OU</span>
-<!-- Поля формы -->
-        <input type="text" placeholder="First Name" required id="first-name" name="first-name"/>
+        <span class="line">OU</span>
+<!-- Сама форма -->
+        <form method="post" action="#">
 
-        <input type="text" placeholder="Last Name" required id="last-name" name="last-name"/>
+          <input type="text" placeholder="First Name" required id="first-name" name="first-name"/>
 
-        <input type="email" placeholder="Email Address" required id="email" name="email"/>
+          <input type="text" placeholder="Last Name" required id="last-name" name="last-name"/>
 
-        <input type="password" placeholder="Choose Password" required id="password" name="password"/>
+          <input type="email" placeholder="Email Address" required id="email" name="email"/>
 
-        <input type="password" placeholder="Password Confirm" required id="confirm-password" name="confirm-password"/>
+          <input type="password" placeholder="Choose Password" required id="password" name="password"/>
 
-        <label>
-          <input type="checkbox" id="checkbox" class="checkbox"/>
-          <span class="send-text">Send me Youbike updates and tips</span>
-        </label>
+          <input type="password" placeholder="Password Confirm" required id="confirm-password" name="confirm-password"/>
 
+          <label>
+            <input type="checkbox" id="checkbox" class="checkbox"/>
+            <span class="send-text">Send me Youbike updates and tips</span>
+          </label>
 
-        <input type="submit" class="btn-create" value="Create my Account"/>
+          <input type="submit" class="btn-create" value="Create my Account"/>
 
-        <span class="policy">By clicking the button above, you agree to the Terms of Service<br> Xiew our Privacy Policy.</span>
+        </form>
 
-      </form>
+<!-- Подпись под формой -->
+          <span class="policy">
+            By clicking the button above, you agree to the Terms of Service
+            Xiew our Privacy Policy.
+          </span>
+
+      </div>
     </div>
-
   </div>
 </body>
 </html>

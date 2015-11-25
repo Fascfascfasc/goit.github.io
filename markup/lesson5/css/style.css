@@ -18,42 +18,72 @@ body{
 }
 
 /*Меню*/
+.menu-container {
+  width: 1114px;
+  margin: 0 auto;
+}
 .menu {
   overflow: hidden;
   height: 36px;
   line-height: 36px;
   background-color: #07508e;
 }
-.button.ola {
+
+/*Первая кнопка справа*/
+.btn.ola {
   float: right;
   margin-right: 20px;
   width: 190px;
+  height: 35px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #51b0dc 0%, #2e79c4 100%);
+  border-left: 1px solid #4299d2;
+  border-right: 1px solid #4299d2;
+  border-bottom: 1px solid #4299d2;
+}
+.btn.ola a {
+  text-decoration: underline;
+}
+.btn.ola a:hover {
+  text-decoration: none;
+}
+
+/*Вторая кнопка справа*/
+.btn.flag {
+  float: right;
+  position: relative;
+  padding-right: 18px;
+  padding-left: 50px;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
 }
-.button.ola:hover {
-  background: linear-gradient(to bottom, #51b0dc 0%, #2e79c4 100%);
+.btn.flag::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  height: 32px;
+  width: 1px;
+  top: 2px;
+  left: -1px;
+  background: #56a2dc;
 }
-.button.ola:hover span {
-  text-decoration: underline;
+.btn.flag::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  height: 23px;
+  width: 26px;
+  top: 6px;
+  left: 16px;
+  background: url("../img/flag.png") 0 0 no-repeat;
 }
-.button.flag {
-  float: right;
-  border-left: 1px solid #56a2dc;
-  /*Не нашел решения как сделать у рамки отступ сверху снизу на 2px*/
-  cursor: pointer;  сгкыщкЖ зщштеукж
+.btn.flag:hover {
+  background-color: #4eabda;
 }
-.button.flag img {
-  vertical-align: middle;
-  padding-right: 8px;
-  position: relative;
-  top: -2px;
-}
-.button.flag:hover {
-  text-decoration: underline;
-  background: linear-gradient(to bottom, #51b0dc 0%, #2e79c4 100%);
-}
+
+/*Пункты меню*/
 ul {
   float: right;
 }
@@ -62,6 +92,7 @@ li {
   text-align: center;
   padding: 0 15px;
   list-style: none;
+  cursor: pointer;
 }
 a {
   line-height: 31px;
@@ -75,8 +106,8 @@ li:hover {
   background-color: #4eabda;
 }
 
-/*Форма*/
-.forma {
+/*Контейнер формы*/
+.form-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,28 +116,30 @@ li:hover {
   width: 560px;
   height: 500px;
 }
+
+/*Заголовок формы*/
 h3 {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.6);;
-  text-align: center;
   padding: 19px 0;
+  margin-bottom: 2px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 100;
-  line-height: 24px;
-  margin-bottom: 2px;
+  background: rgba(0, 0, 0, 0.6);
 }
-form {
-  background: rgba(0, 0, 0, 0.6);;
+
+/*Область формы*/
+.forma {
+  background: rgba(0, 0, 0, 0.6);
   padding-top: 36px;
-  color: #ffffff;
-  outline: none;
 }
 
 /*Кнопка FB*/
 .fb-submit {
   display: block;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
   width: 276px;
   height: 34px;
   color: #ffffff;
@@ -143,12 +176,15 @@ form {
   height: 11px;
   background: url("../img/l-arrow.png") 0 0 no-repeat;
 }
+.fb-submit:hover {
+  box-shadow: 0px 0px 4px 2px rgba(48,125,198,0.9);
+}
 
 /*Разделитель*/
 .line {
   display: block;
   text-align: center;
-  margin: 32px auto 26px auto;
+  margin: 30px auto 25px auto;
   width: 276px;
   text-align: center;
   color: #999999;
@@ -170,10 +206,15 @@ form {
   margin-left: 5px;
 }
 
+/*Сама форма*/
+form {
+  outline: none;
+}
+
 /*Инпуты*/
 input {
   display: block;
-  margin: 16px auto;
+  margin: 15px auto;
   padding: 0 20px;
   width: 236px;
   line-height: 36px;
@@ -181,15 +222,11 @@ input {
   color: #cccccc;
   background: #000000;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #494949;
 }
 input:focus {
   color: #ffffff;
   background: #1b5288;
-}
-input[submit] {
-  width: 150px;
-  background: linear-gradient(to bottom, #50aedb 0%, #2e7ac4 100%);
 }
 
 /*Чекбокс*/
@@ -199,8 +236,13 @@ input[submit] {
   width: 15px;
   height: 15px;
 }
+.checkbox:hover {
+  box-shadow: 0px 0px 4px 2px rgba(48,125,198,0.9);
+}
  .send-text {
+  display: inline-block;
   color: #cccccc;
+  padding: 10px 0;
 }
 
 /*Кнопка создать аккаунт*/
@@ -215,6 +257,9 @@ input[submit] {
   cursor: pointer;
   background: linear-gradient(to bottom, #50aedb 0%, #2e7ac4 100%);
 }
+.btn-create:hover {
+  box-shadow: 0px 0px 4px 2px rgba(48,125,198,0.9);
+}
 .btn-create:focus {
   background: linear-gradient(to top, #50aedb 0%, #2e7ac4 100%);
 }
@@ -222,7 +267,8 @@ input[submit] {
 /*Соглашение*/
 .policy {
   display: block;
-  margin: 20px auto 17px auto;
+  width: 330px;
+  margin: 15px auto 17px auto;
   text-align: center;
   color: #cccccc;
   font-size: 11px;

@@ -19,14 +19,14 @@ body{
 
 /*Меню*/
 .menu-container {
+  overflow: hidden;
   height: 36px;
+  line-height: 36px;
   background-color: #07508e;
 }
 .menu {
-  overflow: hidden;
-  width: 1114px;
   margin: 0 auto;
-  line-height: 36px;
+  width: 1114px;
 }
 
 /*Первая кнопка справа*/

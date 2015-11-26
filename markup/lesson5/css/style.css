@@ -10,8 +10,9 @@
   src:url('../fonts/HelveticaNeue.ttf');
 }
 body{
-  background: url(../img/bg.jpg) no-repeat top center #6d806a;
   font: 14px 'HelveticaNeue', Helvetica, Tahoma, Arial, sans-serif;
+  background: url(../img/bg.jpg) no-repeat top center #6d806a;
+  /*background-size: cover;*/
 }
 .wrapper {
   min-height: 100%;
@@ -108,13 +109,16 @@ li:hover {
 
 /*Контейнер формы*/
 .form-container {
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -250px;
   margin-left: -280px;
+  margin-bottom: 50px;*/
+  margin: 0 auto;
+  margin-top: 7%;
+  margin-bottom: 5%;
   width: 560px;
-  height: 500px;
 }
 
 /*Заголовок формы*/

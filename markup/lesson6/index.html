@@ -1,10 +1,117 @@
+<!-- TODO:
+— доделать иконки справа в шапке
+header, footer, aside, nav, section, main, figure, figcaption
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Zazor</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <div class="wrapper">
 
+<!-- Хедер -->
+    <header>
+
+      <!-- Телефоны -->
+      <div class="telephone">
+        (044)123-45-67 (044)567-89-10
+      </div>
+
+      <!-- Форма авторизации -->
+      <div class="auth-form">
+        <div class="login-form">
+          <input type="text" id="login" name="login" placeholder="логин" />
+          <input type="password" id="password" name="password" placeholder="пароль" />
+        </div>
+        <a href="#">вход</a>
+        <a href="#">регистрация</a>
+        <a href="#" class="lost-pass"><span>забыли пароль?</span></a>
+      </div>
+
+      <!-- Иконки: домой, карта сайта, обратная связь -->
+      <div class="tools">
+      </div>
+    </header>
+
+      <!-- Имидж -->
+      <figure class="main-img">
+        <img src="./img/main-img.jpg" alt="">
+      </figure>
+
+      <!-- Меню -->
+      <nav class="menu">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- Корзина -->
+      <div class="basket">
+        товаров: 0
+        на сумму: 0,00 грн
+      </div>
+    </div>
+    <!-- Поиск по авто -->
+    <div class="search-car">
+      Поиск по автомобилю
+    </div>
+    <!-- Поиск шин -->
+    <div class="search-tyre">
+      Поиск шин
+    </div>
+    <!-- Поиск дисков -->
+    <div class="search-disc">
+      Поиск дисков
+    </div>
+    <!-- Левое меню -->
+    <div class="left-menu">
+      Каталог продукции
+      Шины
+      Диски
+      Болты
+    </div>
+    <!-- Блок с картинками -->
+    <div class="pictures">
+      Goodyear
+      Ultra grip extreme
+      90,00 грн
+
+      Nokian
+      Hakkapeliitta R
+      115,00 грн
+
+      Hankook
+      K 708 155/65 R14
+      393,00 грн
+    </div>
+    <!-- Правое меню -->
+    <div class="right-menu">
+      Бренды
+      Шины
+      Диски
+    </div>
+    <!-- Бренды -->
+    <div class="brands">
+
+    </div>
+    <!-- Подвал -->
+    <footer>
+      <ul>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      Создание сайта © Global Vision
+    </footer>
+  </div>
 </body>
 </html>

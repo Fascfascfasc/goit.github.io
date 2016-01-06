@@ -8,419 +8,435 @@
   <link rel="stylesheet" href="http://allfont.ru/allfont.css?fonts=arial-black"/>
 </head>
 <body>
-
-  <div class="wrapper">
+<div class="wrapper">
   <!-- Хедер -->
-    <header>
-      <!-- Телефоны -->
-      <div class="telephone">
-        (044)123-45-67 (044)567-89-10
+  <header>
+    <!-- Телефоны -->
+    <div class="telephone">
+      (044)123-45-67 (044)567-89-10
+    </div>
+    <!-- Форма авторизации -->
+    <div class="auth-form">
+      <div class="login-form">
+        <input type="text" id="login" name="login" placeholder="логин" />
+        <input type="password" id="password" name="password" placeholder="пароль" />
       </div>
-      <!-- Форма авторизации -->
-      <div class="auth-form">
-        <div class="login-form">
-          <input type="text" id="login" name="login" placeholder="логин" />
-          <input type="password" id="password" name="password" placeholder="пароль" />
-        </div>
-        <a href="#">вход</a>
-        <a href="#">регистрация</a>
-        <a href="#" class="lost-pass"><span>забыли пароль?</span></a>
-      </div>
-      <!-- Иконки: домой, карта сайта, обратная связь -->
-      <div class="tools">
-        <a href="#" class="tool-home"></a>
-        <a href="#" class="tool-map"></a>
-        <a href="#" class="tool-mail"></a>
-      </div>
-    </header>
+      <a href="#">вход</a>
+      <a href="#">регистрация</a>
+      <a href="#" class="lost-pass"><span>забыли пароль?</span></a>
+    </div>
+    <!-- Иконки: домой, карта сайта, обратная связь -->
+    <div class="tools">
+      <a href="#" class="tool-home"></a>
+      <a href="#" class="tool-map"></a>
+      <a href="#" class="tool-mail"></a>
+    </div>
+  </header>
 
   <!-- Имидж -->
-    <figure class="main-img">
-      <img src="./img/main-img.jpg" alt="">
-    </figure>
+  <figure class="main-img">
+    <img src="./img/main-img.jpg" alt="">
+  </figure>
 
   <!-- Меню -->
-    <nav class="menu">
-      <ul>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Оплата</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <!-- Корзина -->
-      <div class="basket">
-        товаров: <span class="basket-count">0</span>
-        на сумму: <span class="basket-count">0,00 грн</span>
-      </div>
-    </nav>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Оплата</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Статьи</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <!-- Корзина -->
+    <div class="basket">
+      товаров: <span class="basket-count">0</span>
+      на сумму: <span class="basket-count">0,00 грн</span>
+    </div>
+  </nav>
 
   <!-- Блок фильтров поиска -->
-    <section class="filters clrfx">
+  <section class="filters clrfx">
 
-      <!-- Поиск по автомобилю -->
-      <form class="search-form car">
-        <div class="car-header clrfx">
-          <span>Диски:</span>
-          <span>Поиск по автомобилю</span>
-          <span>Шины:</span>
-        </div>
-        <div class="selects-car">
+    <!-- Поиск по автомобилю -->
+    <form class="search-form car">
+      <div class="car-header clrfx">
+        <span>Диски:</span>
+        <span>Поиск по автомобилю</span>
+        <span>Шины:</span>
+      </div>
+      <div class="selects-car">
 
-        <!-- Селекты Диски -->
-          <section class="discs-selects">
-            <!-- Марка авто -->
-            <label>
-              <div class="label">
-                <span>Марка </span>
-                <span>авто</span>
-              </div>
-              <select>
-                <option>Alfa Romeo</option>
-                <option>BMW</option>
-                <option>Fiat</option>
-                <option>Ford</option>
-              </select>
-            </label>
-            <!-- Модель автомобиля -->
-            <label>
-              <div class="label">
-                <span>Модель </span>
-                <span>автомобиля</span>
-              </div>
-              <select>
-                <option>MK 1</option>
-                <option>MK 2</option>
-                <option>MK 3</option>
-                <option>MK 4</option>
-              </select>
-            </label>
-            <!-- Год выпуска -->
-            <label>
-              <div class="label">
-                <span>Год выпуска </span>
-                <span>автомобиля</span>
-              </div>
-              <select>
-                <option>2005</option>
-                <option>2006</option>
-                <option>2007</option>
-                <option>2008</option>
-              </select>
-            </label>
-            <!-- Комплектация -->
-            <label>
-              <div class="label">
-                <span>Комлпектация</span>
-              </div>
-              <select>
-                <option>Эконом</option>
-                <option>Спорт</option>
-                <option>Бизнес</option>
-              </select>
-            </label>
-          </section>
-          <!-- Селекты Шины -->
-          <section class="tyres-selects">
-            <!-- Марка авто -->
-            <label>
-              <div class="label">
-                <span>Марка </span>
-                <span>авто</span>
-              </div>
-              <select>
-                <option>Alfa Romeo</option>
-                <option>BMW</option>
-                <option>Fiat</option>
-                <option>Ford</option>
-              </select>
-            </label>
-            <!-- Модель автомобиля -->
-            <label>
-              <div class="label">
-                <span>Модель </span>
-                <span>автомобиля</span>
-              </div>
-              <select>
-                <option>MK 1</option>
-                <option>MK 2</option>
-                <option>MK 3</option>
-                <option>MK 4</option>
-              </select>
-            </label>
-            <!-- Год выпуска -->
-            <label>
-              <div class="label">
-                <span>Год выпуска </span>
-                <span>автомобиля</span>
-              </div>
-              <select>
-                <option>2005</option>
-                <option>2006</option>
-                <option>2007</option>
-                <option>2008</option>
-              </select>
-            </label>
-            <!-- Комплектация -->
-            <label>
-              <div class="label">
-                <span>Комлпектация</span>
-              </div>
-              <select>
-                <option>Эконом</option>
-                <option>Спорт</option>
-                <option>Бизнес</option>
-              </select>
-            </label>
-          </section>
-          <a href="#">поиск...</a>
-        </div>
-      </form>
+      <!-- Селекты Диски -->
+        <section class="discs-selects">
+          <!-- Марка авто -->
+          <label>
+            <div class="label">
+              <span>Марка </span>
+              <span>авто</span>
+            </div>
+            <select>
+              <option>Alfa Romeo</option>
+              <option>BMW</option>
+              <option>Fiat</option>
+              <option>Ford</option>
+            </select>
+          </label>
+          <!-- Модель автомобиля -->
+          <label>
+            <div class="label">
+              <span>Модель </span>
+              <span>автомобиля</span>
+            </div>
+            <select>
+              <option>MK 1</option>
+              <option>MK 2</option>
+              <option>MK 3</option>
+              <option>MK 4</option>
+            </select>
+          </label>
+          <!-- Год выпуска -->
+          <label>
+            <div class="label">
+              <span>Год выпуска </span>
+              <span>автомобиля</span>
+            </div>
+            <select>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+            </select>
+          </label>
+          <!-- Комплектация -->
+          <label>
+            <div class="label">
+              <span>Комлпектация</span>
+            </div>
+            <select>
+              <option>Эконом</option>
+              <option>Спорт</option>
+              <option>Бизнес</option>
+            </select>
+          </label>
+        </section>
+        <!-- Селекты Шины -->
+        <section class="tyres-selects">
+          <!-- Марка авто -->
+          <label>
+            <div class="label">
+              <span>Марка </span>
+              <span>авто</span>
+            </div>
+            <select>
+              <option>Alfa Romeo</option>
+              <option>BMW</option>
+              <option>Fiat</option>
+              <option>Ford</option>
+            </select>
+          </label>
+          <!-- Модель автомобиля -->
+          <label>
+            <div class="label">
+              <span>Модель </span>
+              <span>автомобиля</span>
+            </div>
+            <select>
+              <option>MK 1</option>
+              <option>MK 2</option>
+              <option>MK 3</option>
+              <option>MK 4</option>
+            </select>
+          </label>
+          <!-- Год выпуска -->
+          <label>
+            <div class="label">
+              <span>Год выпуска </span>
+              <span>автомобиля</span>
+            </div>
+            <select>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+            </select>
+          </label>
+          <!-- Комплектация -->
+          <label>
+            <div class="label">
+              <span>Комлпектация</span>
+            </div>
+            <select>
+              <option>Эконом</option>
+              <option>Спорт</option>
+              <option>Бизнес</option>
+            </select>
+          </label>
+        </section>
+        <a href="#">поиск...</a>
+      </div>
+    </form>
 
-      <!-- Поиск шин -->
-      <form class="search-form tyre">
-        <span>поиск шин</span>
-      </form>
+    <!-- Поиск шин -->
+    <form class="search-form tyre">
+      <span>поиск шин</span>
+    </form>
 
-      <!-- Поиск дисков -->
-      <form class="search-form disc">
-        <span>поиск дисков</span>
-      </form>
+    <!-- Поиск дисков -->
+    <form class="search-form disc">
+      <span>поиск дисков</span>
+    </form>
 
-    </section>
+  </section>
 
   <!-- Центральный контейнер -->
-    <section class="central-container clrfx">
-      <!-- Левое меню -->
-      <div class="left-menu">
-        <div class="title-frst">
-          Каталог продукции:
-        </div>
-        <div class="title-sec">
-          Шины
-        </div>
-        <ul>
-          <li><a href="#">Наименование 1</a></li>
-          <li><a href="#">Наименование 2</a></li>
-          <li><a href="#">Наименование 3</a></li>
-          <li><a href="#">Наименование 4</a></li>
-        </ul>
-        <div class="title-sec">
-          Диски
-        </div>
-        <ul>
-          <li><a href="#">Наименование 1</a></li>
-          <li><a href="#">Наименование 2</a></li>
-          <li><a href="#">Наименование 3</a></li>
-          <li><a href="#">Наименование 4</a></li>
-        </ul>
-        <div class="title-sec">
-          Болты
-        </div>
-        <ul>
-          <li><a href="#">Наименование 1</a></li>
-          <li><a href="#">Наименование 2</a></li>
-          <li><a href="#">Наименование 3</a></li>
-          <li><a href="#">Наименование 4</a></li>
-        </ul>
+  <section class="central-container clrfx">
+    <!-- Левое меню -->
+    <div class="left-menu">
+      <div class="title-frst">
+        Каталог продукции:
       </div>
-
-      <!-- Блок с картинками -->
-      <div class="items clrfx">
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Goodyear
-            </span>
-            <span class="subtitle">
-              Ultra Grip Extreme
-            </span>
-            <span class="image">
-              <img src="./img/tyre1.jpg" alt="">
-            </span>
-            <span class="price">
-              90,00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Nokian
-            </span>
-            <span class="subtitle">
-              Hakkapeliitta R
-            </span>
-            <span class="image">
-              <img src="./img/tyre22.jpg" alt="">
-            </span>
-            <span class="price">
-              115,00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Hankook
-            </span>
-            <span class="subtitle">
-              K 708 155/65 R14
-            </span>
-            <span class="image">
-              <img src="./img/tyre3.jpg" alt="">
-            </span>
-            <span class="price">
-              393.00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Goodyear
-            </span>
-            <span class="subtitle">
-              Ultra Grip Extreme
-            </span>
-            <span class="image">
-              <img src="./img/tyre1.jpg" alt="">
-            </span>
-            <span class="price">
-              90,00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Nokian
-            </span>
-            <span class="subtitle">
-              Hakkapeliitta R
-            </span>
-            <span class="image">
-              <img src="./img/tyre22.jpg" alt="">
-            </span>
-            <span class="price">
-              115,00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Hankook
-            </span>
-            <span class="subtitle">
-              K 708 155/65 R14
-            </span>
-            <span class="image">
-              <img src="./img/tyre1.jpg" alt="">
-            </span>
-            <span class="price">
-              393.00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Goodyear
-            </span>
-            <span class="subtitle">
-              Ultra Grip Extreme
-            </span>
-            <span class="image">
-              <img src="./img/tyreX.jpg" alt="">
-            </span>
-            <span class="price">
-              90,00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Nokian
-            </span>
-            <span class="subtitle">
-              Hakkapeliitta R
-            </span>
-            <span class="image">
-              <img src="./img/tyre22.jpg" alt="">
-            </span>
-            <span class="price">
-              115,00 грн
-            </span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <span class="title">
-              Hankook
-            </span>
-            <span class="subtitle">
-              K 708 155/65 R14
-            </span>
-            <span class="image">
-              <img src="./img/tyre1.jpg" alt="">
-            </span>
-            <span class="price">
-              393.00 грн
-            </span>
-          </a>
-        </div>
+      <div class="title-sec">
+        Шины
       </div>
-
-      <!-- Правое меню -->
-      <div class="right-menu">
-        <div class="title-frst">
-          Бренды
-        </div>
-        <div class="title-sec">
-          Шины
-        </div>
-        <ul>
-          <li><a href="#">Бренд 1</a></li>
-          <li><a href="#">Бренд 2</a></li>
-          <li><a href="#">Бренд 3</a></li>
-        </ul>
-        <div class="title-sec">
-          Диски
-        </div>
-        <ul>
-          <li><a href="#">Бренд 1</a></li>
-          <li><a href="#">Бренд 2</a></li>
-          <li><a href="#">Бренд 3</a></li>
-        </ul>
-      </div>
-
-      <!-- Бренды -->
-      <div class="brands clrfx">
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-          <li><a href="#"><img src=""./img/brand.png alt="бренд"></a></li>
-        </div>
-
-    </section>
-  </div>
-
-    <!-- Подвал -->
-    <footer>
-      <ul class="clrfx">
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul>
+        <li><a href="#">Наименование 1</a></li>
+        <li><a href="#">Наименование 2</a></li>
+        <li><a href="#">Наименование 3</a></li>
+        <li><a href="#">Наименование 4</a></li>
       </ul>
-      <span class="copywrite">Создание сайта © Global Vision</span>
-    </footer>
+      <div class="title-sec">
+        Диски
+      </div>
+      <ul>
+        <li><a href="#">Наименование 1</a></li>
+        <li><a href="#">Наименование 2</a></li>
+        <li><a href="#">Наименование 3</a></li>
+        <li><a href="#">Наименование 4</a></li>
+      </ul>
+      <div class="title-sec">
+        Болты
+      </div>
+      <ul>
+        <li><a href="#">Наименование 1</a></li>
+        <li><a href="#">Наименование 2</a></li>
+        <li><a href="#">Наименование 3</a></li>
+        <li><a href="#">Наименование 4</a></li>
+      </ul>
+    </div>
 
+    <!-- Блок с картинками -->
+    <div class="items clrfx">
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Goodyear
+          </span>
+          <span class="subtitle">
+            Ultra Grip Extreme
+          </span>
+          <span class="image">
+            <img src="./img/tyre1.jpg" alt="">
+          </span>
+          <span class="price">
+            90,00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Nokian
+          </span>
+          <span class="subtitle">
+            Hakkapeliitta R
+          </span>
+          <span class="image">
+            <img src="./img/tyre22.jpg" alt="">
+          </span>
+          <span class="price">
+            115,00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Hankook
+          </span>
+          <span class="subtitle">
+            K 708 155/65 R14
+          </span>
+          <span class="image">
+            <img src="./img/tyre3.jpg" alt="">
+          </span>
+          <span class="price">
+            393.00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Goodyear
+          </span>
+          <span class="subtitle">
+            Ultra Grip Extreme
+          </span>
+          <span class="image">
+            <img src="./img/tyre1.jpg" alt="">
+          </span>
+          <span class="price">
+            90,00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Nokian
+          </span>
+          <span class="subtitle">
+            Hakkapeliitta R
+          </span>
+          <span class="image">
+            <img src="./img/tyre22.jpg" alt="">
+          </span>
+          <span class="price">
+            115,00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Hankook
+          </span>
+          <span class="subtitle">
+            K 708 155/65 R14
+          </span>
+          <span class="image">
+            <img src="./img/tyre1.jpg" alt="">
+          </span>
+          <span class="price">
+            393.00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Goodyear
+          </span>
+          <span class="subtitle">
+            Ultra Grip Extreme
+          </span>
+          <span class="image">
+            <img src="./img/tyreX.jpg" alt="">
+          </span>
+          <span class="price">
+            90,00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Nokian
+          </span>
+          <span class="subtitle">
+            Hakkapeliitta R
+          </span>
+          <span class="image">
+            <img src="./img/tyre22.jpg" alt="">
+          </span>
+          <span class="price">
+            115,00 грн.
+          </span>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <span class="title">
+            Hankook
+          </span>
+          <span class="subtitle">
+            K 708 155/65 R14
+          </span>
+          <span class="image">
+            <img src="./img/tyre1.jpg" alt="">
+          </span>
+          <span class="price">
+            393.00 грн.
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Правая форма -->
+    <form action="" class="right-form">
+      <div class="title-frst">
+        Бренды
+      </div>
+      <!-- Первый блок чекбоксов-->
+      <div class="title-sec">
+        Шины
+      </div>
+        <label for="tyre-brand1">
+          <input type="checkbox" id="tyre-brand1"/>
+          <span class="brand">Бренд 1</span>
+        </label>
+        <label for="tyre-brand2">
+          <input type="checkbox" id="tyre-brand2"/>
+          <span class="brand">Бренд 2</span>
+        </label>
+        <label for="tyre-brand3">
+          <input type="checkbox" id="tyre-brand3"/>
+          <span class="brand">Бренд 3</span>
+        </label>
+      <!-- Второй блок чекбоксов-->
+      <div class="title-sec clrfx">
+        Диски
+      </div>
+        <label for="disk-brand1">
+          <input type="checkbox" id="disk-brand1"/>
+          <span class="brand">Бренд 1</span>
+        </label>
+        <label for="disk-brand2">
+          <input type="checkbox" id="disk-brand2"/>
+          <span class="brand">Бренд 2</span>
+        </label>
+        <label for="disk-brand3">
+          <input type="checkbox" id="disk-brand3"/>
+          <span class="brand">Бренд 3</span>
+        </label>
+      <!-- Кнопка Выбрать -->
+      <input type="submit" class="btn-choose" value="Выбрать"/>
+    </form>
+
+    <!-- Бренды -->
+    <div class="brands clrfx">
+      <li><a href="#"><img src="./img/brnd-toyo-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-bridgestone-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-continental-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-cooper-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-avon-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-factory-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-pirelli-h.png"></a></li>
+      <li><a href="#"><img src="./img/brnd-dunlop-h.png"></a></li>
+    </div>
+
+  </section>
+</div>
+
+<!-- Подвал -->
+<footer>
+  <ul>
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Доставка</a></li>
+    <li><a href="#">Статьи</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <span class="copywrite">Создание сайта © Global Vision</span>
+</footer>
 </body>
 </html>

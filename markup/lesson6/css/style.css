@@ -51,6 +51,7 @@ header {
   margin-top: 17px;
   width: 495px;
   height: 26px;
+  background: -webkit-linear-gradient(#1f6787 0%, #0c3357 100%);
   background: linear-gradient(#1f6787 0%, #0c3357 100%);
   box-shadow: inset 0px 1px #a6c3cf;
   box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.4);
@@ -175,6 +176,7 @@ input::-webkit-input-placeholder {
   width: 908px;
   height: 33px;
   line-height: 30px;
+  background-image: -webkit-linear-gradient(top, #576068 1px, #000000 10px);
   background-image: linear-gradient(to bottom, #576068 1px, #000000 10px);
   border: 1px solid #2c345a;
   border-radius: 5px;
@@ -195,6 +197,7 @@ input::-webkit-input-placeholder {
 }
 .menu a:hover {
   color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #25617B 0%, #0c3357 100%);
   background-image: linear-gradient(to bottom, #25617B 0%, #0c3357 100%);
   border-radius: 50px;
 }
@@ -339,12 +342,12 @@ input::-webkit-input-placeholder {
 }
 .left-menu,
 .items,
-.right-menu {
+.right-form {
   float: left;
   margin-right: 10px;
 }
 .left-menu,
-.right-menu {
+.right-form {
   width: 180px;
   height: 400px;
 }
@@ -352,7 +355,7 @@ input::-webkit-input-placeholder {
 /*Левое меню*/
 .title-frst {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   height: 28px;
   box-sizing: border-box;
   border: 1px solid #79878d;
@@ -374,17 +377,18 @@ input::-webkit-input-placeholder {
   background: url("../img/catalog-icon.png") 0 0 no-repeat;
 }
 .title-sec {
+  display: block;
   position: relative;
-  margin: 5px 0 3px;
-  height: 28px;
   width: 150px;
+  height: 28px;
   box-sizing: border-box;
+  margin: 10px 0 3px;
+  padding: 3px 5px 3px 28px;
   border: 1px solid #79878d;
   border-radius: 20px;
-  line-height: 20px;
-  font-size: 12px;
+  line-height: 23px;
+  font-size: 14px;
   color: #114165;
-  padding: 3px 5px 3px 28px;
   text-transform: uppercase;
 }
 .title-sec::before {
@@ -399,6 +403,7 @@ input::-webkit-input-placeholder {
 .left-menu li {
   margin-left: 50px;
   font-size: 13px;
+  line-height: 20px;
   list-style: circle;
 }
 .left-menu a {
@@ -407,29 +412,26 @@ input::-webkit-input-placeholder {
 }
 .left-menu a:hover {
   color: #0c3256;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
+  font: bold italic 14px Arial, sans-serif;
+  letter-spacing: 1px;
   text-decoration: underline;
 }
 
 /*Блок с товарами*/
 .items {
   padding: 10px;
+  padding-bottom: 30px;
   width: 507px;
   text-align: center;
   background: #e5e7e8;
-  background: -moz-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #e5e7e8), color-stop(100%, #93a7b0));
   background: -webkit-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
-  background: -o-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
-  background: -ms-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
   background: linear-gradient(to bottom, #e5e7e8 0%, #93a7b0 100%);
   border-radius: 5px;
 }
 .item {
   display: inline-block;
-  margin: 5px 14px 0;
+  margin: 5px 14px 10px;
   box-sizing: border-box;
   width: 140px;
   text-align: center;
@@ -442,88 +444,154 @@ input::-webkit-input-placeholder {
   box-sizing: border-box;
 }
 .title {
+  height: 16px;
   color: #206988;
   font-size: 15px;
 }
 .subtitle {
+  height: 17px;
   color: #1f2528;
   font-size: 13px;
 }
 .price {
+  line-height: 25px;
   color: #114165;
-  font-weight: bold;
-  font-size: 14px;
+  font: bold italic 14px sans-serif;
+  /*font-weight: bold;
+  font-style: italic;
+  font-size: 14px;*/
 }
 .item .image {
+  display: block;
   position: relative;
   overflow: hidden;
-  /*margin: 5px auto;*/
+  margin: 0 auto;
   padding: 5px;
   width: 130px;
-  height: 120px;
+  height: 130px;
   background: #ffffff;
   border-radius: 8px;
-  /*border: 1px solid #000000;*/
+  border: 1px solid #a4aeb1;
 }
 .item img {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   height: 120px;
 }
 .item a {
   text-decoration: none;
 }
 .item:hover {
-  transition: 0.3s background;
   background: #ffffff;
   border-radius: 8px;
 }
+.item:hover .image {
+  border: none;
+}
 .item:hover span {
   color: #000000;
-  transition: 0.5s;
 }
 
 /*Правое меню*/
-.right-menu {
+.right-form {
   margin-right: 0px;
 }
-.right-menu li {
-  margin-left: 50px;
+.right-form .title-sec {
+  margin-left: 15px;
+}
+.right-form label {
+  display: block;
+  margin: 5px 0 5px 25px;
   font-size: 13px;
+  line-height: 20px;
   list-style: circle;
 }
-.right-menu a {
+.right-form span {
+  padding-left: 8px;
   color: #465961;
   text-decoration: none;
+  cursor: pointer;
 }
-.right-menu a:hover {
+.right-form span:hover {
   color: #0c3256;
   font-size: 14px;
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
 }
-
+.right-form .btn-choose {
+  display: block;
+  margin: 10px 25px;
+  width: 80px;
+  height: 25px;
+  padding: 3px 5px 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #e5e9ea;
+  border-radius: 11px;
+  border: 1px solid #a7abae;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.4);
+  background-image: linear-gradient(to bottom, #1f6787 0%, #0d3458 100%);
+}
 
 /*Бренды*/
 .brands {
   margin: 0 auto;
-  width: 600px;
+  width: 710px;
+  padding: 40px 0 10px;
 }
 .brands li {
   float: left;
-  padding-right: 10px;
+  line-height: 40px;
+  padding-right: 15px;
   list-style: none;
+}
+.brands li a {
+  display: block;
+}
+.brands li img {
+  vertical-align: top;
 }
 
 /*Подвал*/
 footer {
-  margin: 0 auto;
-  width: 400px;
+  background: #213a4d;
+  text-align: center;
+  border: 1px solid #000000;
+}
+footer ul {
+  display: inline-block;
+  padding: 12px 0 5px;
 }
 footer li {
   float: left;
-  padding-right: 10px;
+  line-height: 14px;
+  padding-right: 12px;
+  padding-left: 12px;
   list-style: none;
+  border-right: 1px solid #bec6c9;
+}
+footer li:first-child {
+  padding-left: 0;
+}
+footer li:last-child {
+  border-right: none;
+}
+footer a {
+  color: #bec6c9;
+  font-size: 12px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #52abcb;
+  font-size: 12px;
+  text-decoration: none;
+}
+footer .copywrite {
+  display: block;
+  padding-bottom: 45px;
+  color: #7f4740;
+  font-size: 10px;
 }

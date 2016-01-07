@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="http://allfont.ru/allfont.css?fonts=arial-black"/>
 </head>
 <body>
+<!-- Обертка -->
 <div class="wrapper">
   <!-- Хедер -->
   <header>
@@ -16,15 +17,18 @@
       (044)123-45-67 (044)567-89-10
     </div>
     <!-- Форма авторизации -->
-    <div class="auth-form">
-      <div class="login-form">
-        <input type="text" id="login" name="login" placeholder="логин" />
-        <input type="password" id="password" name="password" placeholder="пароль" />
-      </div>
-      <a href="#">вход</a>
-      <a href="#">регистрация</a>
-      <a href="#" class="lost-pass"><span>забыли пароль?</span></a>
-    </div>
+    <form method="post" action="#" class="auth-form">
+        <span class="auth-icon"></span>
+      <input type="text" id="login" name="login" placeholder="логин"/>
+      <input type="password" id="password" name="password" placeholder="пароль"/>
+      <!-- Кнопка Войти -->
+      <input type="submit" class="signin" value="вход"/>
+        <span class="separator"></span>
+      <!-- Кнопка Регистраия -->
+      <input type="submit" class="signup" value="регистрация"/>
+      <!-- Кнопка Забыли пароль? -->
+      <input type="submit" class="lost-pass" value="забыли пароль?"/>
+    </form>
     <!-- Иконки: домой, карта сайта, обратная связь -->
     <div class="tools">
       <a href="#" class="tool-home"></a>
@@ -58,7 +62,7 @@
   <section class="filters clrfx">
 
     <!-- Поиск по автомобилю -->
-    <form class="search-form car">
+    <form method="post" action="#" class="search-form car">
       <div class="car-header clrfx">
         <span>Диски:</span>
         <span>Поиск по автомобилю</span>
@@ -177,12 +181,12 @@
     </form>
 
     <!-- Поиск шин -->
-    <form class="search-form tyre">
+    <form method="post" action="#" class="search-form tyre">
       <span>поиск шин</span>
     </form>
 
     <!-- Поиск дисков -->
-    <form class="search-form disc">
+    <form method="post" action="#" class="search-form disc">
       <span>поиск дисков</span>
     </form>
 
@@ -191,7 +195,7 @@
   <!-- Центральный контейнер -->
   <section class="central-container clrfx">
     <!-- Левое меню -->
-    <div class="left-menu">
+    <aside class="left-menu">
       <div class="title-frst">
         Каталог продукции:
       </div>
@@ -222,7 +226,7 @@
         <li><a href="#">Наименование 3</a></li>
         <li><a href="#">Наименование 4</a></li>
       </ul>
-    </div>
+    </aside>
 
     <!-- Блок с картинками -->
     <div class="items clrfx">
@@ -373,7 +377,7 @@
     </div>
 
     <!-- Правая форма -->
-    <form action="" class="right-form">
+    <form method="post" action="#" class="right-form">
       <div class="title-frst">
         Бренды
       </div>

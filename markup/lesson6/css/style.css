@@ -66,7 +66,16 @@ header {
   display: inline-block;
   position: relative;
 }
-.login-form::before {
+/*Логин и пароль*/
+#login,
+#password {
+  width: 105px;
+  margin-left: 24px;
+  padding-left: 4px;
+  line-height: 13px;
+  border-radius: 2px;
+}
+/*input#login::before {
   display: inline-block;
   position: absolute;
   content: '';
@@ -75,61 +84,57 @@ header {
   top: 5px;
   left: 7px;
   background: url("../img/auth-user-icon.png") 0 0 no-repeat;
-}
-
-/*Поле логин*/
-input#login,
+}*/
 #password {
-  width: 105px;
-  margin-left: 24px;
-  padding-left: 4px;
-  line-height: 13px;
-  border-radius: 2px;
-}
-
-/*Поле пароль*/
-input#password {
   margin-left: 6px;
 }
 input::-webkit-input-placeholder {
   color: #97a2a6;
  }
-
-/*Ссылки в форме авторизации*/
-.auth-form a {
-  color: #ffffff;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-}
-.auth-form a:nth-child(2) {
-  padding-left: 6px;
-}
-.auth-form a:nth-child(3) {
-  padding-left: 6px;
-}
-.auth-form a:nth-child(2)::after {
+.auth-icon {
   display: inline-block;
-  content: '';
   position: absolute;
-  width: 1px;
-  height: 10px;
-  margin-left: 4px;
-  top: 26px;
-  background: #ffffff;
-}
-.auth-form a:hover {
-  text-decoration: underline;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url("../img/auth-user-icon.png") 5px 4px no-repeat;
 }
 
-/*Ссылка «забыли пароль?»*/
-.auth-form .lost-pass {
+/*Кнопки в форме авторизации*/
+.signin,
+.signup,
+.lost-pass {
+  padding-left: 5px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.signup {
+  padding-left: 4px;
+}
+.lost-pass {
   color: #bfbfbf;
   text-decoration: underline;
-  padding-left: 15px;
+  padding-left: 10px;
   letter-spacing: normal;
 }
-.auth-form .lost-pass:hover {
+.signin:hover,
+.signup:hover {
+  text-decoration: underline;
+}
+.lost-pass:hover {
   text-decoration: none;
+}
+.separator {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 10px;
+  top: 26px;
+  background: #ffffff;
 }
 
 /*Иконки: домой, карта сайта, обратная связь*/

@@ -308,11 +308,18 @@ select {
 .short-label {
   width: 55px;
 }
-.search-form a {
+.search-form input[type="submit"] {
   float: right;
   padding-top: 3px;
   font: italic 14px Arial, sans-serif;
   color: #154467;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.search-form input[type="submit"]:hover {
+  text-decoration: none;
 }
 
 /*Поиск шин*/

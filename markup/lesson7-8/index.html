@@ -8,6 +8,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=league-gothic" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.ru/allfont.css?fonts=league-gothic-condensed-regular" rel="stylesheet" type="text/css" />
     <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
     <link href="http://allfont.ru/allfont.css?fonts=open-sans-light" rel="stylesheet" type="text/css" />
     <link href="http://allfont.ru/allfont.css?fonts=open-sans-extrabold" rel="stylesheet" type="text/css" />
@@ -15,14 +16,19 @@
   <body>
 
     <header class="page-header">
+
       <div class="page-header__overlay"></div>
+
       <div class="page-header__inner">
+
         <div class="page-header__menu">
-          <a href="/" class="menu__logo"></a>
+          <div class="menu__logo-container">
+            <a href="#" class="menu__logo"></a>
+          </div>
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="#">Home</a>
+                <a class="link"href="#">Home</a>
               </li>
               <li class="main-nav__item">
                 <a href="#">About</a>
@@ -42,37 +48,56 @@
             </ul>
           </nav>
         </div>
+
         <div id="slider" class="page-header__slider">
           <div id="wrapper">
             <div id="slider-wrap">
           	  <ul id="slider">
               	 <li>
                     <div>
-                        <h3 class="slide-heading">Lorem ipsum dolor</h3>
+                        <h3 class="slide-heading">Lorem ipsum dolor1</h3>
                         <span class="slide-subheading">It will make all of your dreams come true</span>
                         <p class="slide-text">
                           Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
                     </div>
-                    <img src="./img/phone-1.png" alt="">
+                    <img src="./img/phone-2.png" alt="">
                  </li>
                  <li>
                    <div>
-                       <h3 class="slide-heading">Lorem ipsum dolor</h3>
+                       <h3 class="slide-heading">Lorem ipsum dolor2</h3>
                        <span class="slide-subheading">It will make all of your dreams come true</span>
                        <p class="slide-text">
                          Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
                    </div>
-                   <img src="./img/phone-1.png" alt="">
+                   <img src="./img/phone-3.png" alt="">
                  </li>
                  <li>
                    <div>
-                       <h3 class="slide-heading">Lorem ipsum dolor</h3>
+                       <h3 class="slide-heading">Lorem ipsum dolor3</h3>
                        <span class="slide-subheading">It will make all of your dreams come true</span>
                        <p class="slide-text">
                          Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
                    </div>
-                   <img src="./img/phone-1.png" alt="">
+                   <img src="./img/phone-4.png" alt="">
                  </li>
+                 <!-- <li>
+                   <div>
+                       <h3 class="slide-heading">Lorem ipsum dolor4</h3>
+                       <span class="slide-subheading">It will make all of your dreams come true</span>
+                       <p class="slide-text">
+                         Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                   </div>
+                   <img src="./img/phone-2.png" alt="">
+                 </li>
+                 <li>
+                   <div>
+                       <h3 class="slide-heading">Lorem ipsum dolor4</h3>
+                       <span class="slide-subheading">It will make all of your dreams come true</span>
+                       <p class="slide-text">
+                         Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                   </div>
+                   <img src="./img/phone-2.png" alt="">
+                 </li>                  -->
               </ul>
             </div>
             <div class="btns" id="next"></div>
@@ -83,6 +108,7 @@
             </div>
           </div>
         </div>
+
         <script type="text/javascript">
           //current position
           var pos = 0;
@@ -113,7 +139,7 @@
            //*> OPTIONAL SETTINGS
           ************************/
           //automatic slider
-          // var autoSlider = setInterval(slideRight, 3000);
+          var autoSlider = setInterval(slideRight, 2000);
 
           //for each slide
           $.each($('#slider-wrap ul li'), function() {
@@ -181,6 +207,7 @@
           $('#pagination-wrap ul li:eq('+pos+')').addClass('active');
           }
         </script>
+
       </div>
 
     </header>
@@ -218,29 +245,21 @@
       <div class="comments-updates__inner">
         <div class="comments-inner">
           <div class="comment">
-            <p class="comment-heading">
+            <div class="comment-inner">
+              <p class="comment-heading">
               Pingbuller <span>starts here</span></p>
-            <p class="comment-text">
-              Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.” Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+              <p class="comment-text">
+              "Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+            </div>
           </div>
-          <!-- <div class="comment">
-            <p class="comment-heading">
-              Pingbuller starts here</p>
-            <p class="comment-text">
-              “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.” Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+          <div class="pagination">
+            <ul>
+              <li></li>
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
-          <div class="comment">
-            <p class="comment-heading">
-              Pingbuller starts here</p>
-            <p class="comment-text">
-              “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.” Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
-          </div>
-          <div class="comment">
-            <p class="comment-heading">
-              Pingbuller starts here</p>
-            <p class="comment-text">
-              “Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.” Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
-          </div> -->
         </div>
         <div class="updates-inner">
           <p class="updates-heading">
@@ -260,17 +279,17 @@
               Posted by Admin on March 13 2012 in Category</p>
           </div>
           <div class="update">
-            <img src="./img/update-pic.png" alt="" class="update-pic">
+            <img src="./img/update-pic3.png" alt="" class="update-pic">
             <p class="update-heading">
               Nunc turpis neque feugiat eget</p>
             <p class="update-text">
               Posted by Admin on March 13 2012 in Blog Updates</p>
           </div>
-          <a>More blog posts</a>
+          <a class="updates_link">More blog posts</a>
         </div>
       </div>
     </section>
-
+<!-- 
     <section class="logos">
       <div class="logos__inner">
         <a href="#" class="logos__item">
@@ -287,12 +306,16 @@
           <img src="./img/brand-logo-5.png" alt="" class="logos__item-img"></a>
       </div>
     </section>
+   -->
 
-    <section class="news">
+    <!-- <section class="news">
       <div class="news__inner">
-        <div class="news__item">
-          <a href="/" class="news__logo_gray"></a>
-          <p class="news__copywrite-text">Copyright 2013, Pingbull AS</p>
+        <div class="news__copywrite">
+          <a href="#" class="news__logo"></a>
+          <span class="news__copywrite-signature">
+            Copyright 2013, Pingbull AS</span>
+          <p class="news__copywrite-text">
+            Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque.</p>
         </div>
         <div class="news__item">
           <p class="news__item-heading">Recent comments</p>
@@ -339,6 +362,10 @@
         </p>
       </div>
     </footer>
+
+
+
+
 
   </body>
 </html>
